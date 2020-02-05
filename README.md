@@ -2,26 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
-## Development server
+## Iniciar Aplicacion
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Correr el comando `npm install` esto con el fin de instalar las librerias necesarias
 
-## Code scaffolding
+## Abrir Aplicacion
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Cuando se instalen las librerias se debe correr el comando `ng serve -o` el cual abrira la aplicación en el puerto 4200
 
-## Build
+## Abrir Aplicacion
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+La pagina contiene Home donde podras ver las peliculas que vendran para 2020 y las peliculas en cartelera, en Search puedes buscar las peliculas de tu agrado, las tarjetas que se muestran tanto en home como en search cuentan con un boton para ver a mas detalle la pelicula,
+el apartado de About us muestra un poco de información sobre mi.
 
-## Running unit tests
+## Login
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Cuando ingrese por primera vez vera en el navbar en la parte superior derecha login el cual lo conducira a una pantalla nueva donde se podra loguear, se aclara que la unica validacion que hace es recibir un nombre y contraseña que no esten vacias, cuando se realice el login sera re direccionado al home y donde se encontraba el enlace para ir a Login ahora vera el nombre del cual se logueo
