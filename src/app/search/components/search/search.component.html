@@ -23,13 +23,11 @@
                     <div class="card-body">
                         <h5 class="card-title">{{pelicula.title}}</h5>
                         <p class="card-text">{{pelicula.overview | slice:0:200}}...</p>
-                        <a href="#" class="btn btn-success my-2 my-sm-0">Go somewhere</a>
+                        <a [routerLink]="['/description',pelicula.id]" class="btn btn-success my-2 my-sm-0">Detalles</a>
                     </div>
                 </div>
             </div>
         </div>
-
-
 
         <ng-template #other_content>
             <div style="text-align: center;">

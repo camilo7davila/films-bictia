@@ -1,0 +1,55 @@
+<main>
+    <section class="contenedor">
+        <div class="contenedor-carta">
+            <div class="carta" *ngIf="pelicula">
+                <div class="carta-izquierda">
+                    <figure class="contenedor-imagen">
+                        <img src="https://image.tmdb.org/t/p/w500{{pelicula.backdrop_path}}" alt="esta es la imagen">
+                    </figure>
+                </div>
+                <div class="carta-derecha">
+                    <h3><strong>{{pelicula.title}}</strong> </h3>
+                    <p>{{pelicula.overview}}</p>
+                    <div class="clasificacion">
+                        <p><strong>Total del votos: </strong>{{pelicula.vote_count}}</p>
+                        <p><strong>Promedio de votos: </strong>{{pelicula.vote_average}}</p>
+                        <p><strong>Popularidad: </strong>{{pelicula.popularity}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <hr style="border: 1px solid gray; width: 85%;">
+
+    <section class="contenedor-carrusel contenedor">
+        
+        <h2 class="text-light proximos-estrenos">POPULARES</h2>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./../../../../assets/top.png" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 >TOP 10</h5>
+                    </div>
+                </div>
+                <div class="carousel-item" *ngFor="let peliculaCartelera of peliculaCartelera">
+                    <img src="https://image.tmdb.org/t/p/w500{{peliculaCartelera.backdrop_path}}" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>{{peliculaCartelera.title}}</h5>
+                        <p>{{peliculaCartelera.overview | slice:0:60}}...</p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>

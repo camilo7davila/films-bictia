@@ -42,3 +42,20 @@ main{
     margin: 0 auto;
     width: 100% !important;
 }
+
+
+@media screen and (max-width:768px){
+    .contenedor-tarjetas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .contenedor-tarjetas{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+}

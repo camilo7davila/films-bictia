@@ -20,7 +20,6 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
     this.ps.obtenerTodasPeliculas().subscribe(data => {
       this.peliculas = data.results
-      console.log(this.peliculas);
     })
   }
 

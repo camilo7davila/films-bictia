@@ -1,0 +1,23 @@
+<main>
+    <div class="contenedor">
+        <div class="carta">
+            <div class="contenedor-imagen">
+                <img src="./../../../../assets/logoBictia.png" alt="icono de empresa">
+            </div>
+            <div class="contenedor-cuerpo">
+                <div class="titulo">
+                    <h3>Bienvendio</h3>
+                </div>
+                <div class="contenedor-inputs">
+                    <p>Correo</p>
+                    <input type="text" [(ngModel)]="nombre">
+                    <p>Contraseña</p>
+                    <input type="password" [(ngModel)]="password" style="margin-bottom: 20px;">
+                </div>
+            </div>
+            <div class="contenedeor-boton">
+                <a (click)="login()">Entrar</a>
+            </div>
+        </div>
+    </div>
+</main>

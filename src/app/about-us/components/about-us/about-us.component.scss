@@ -70,3 +70,55 @@ h2 {
     font-size: 24px;
     margin-bottom:40px ;
 }
+
+@media screen and (max-width:1000px){
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
+    .hero img{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width:768px){
+    .hero img{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .contenedor-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 1.5;
+        letter-spacing: -.2px;
+        color: white;
+        margin: 0;
+        /* text-transform: uppercase;
+        text-decoration: dashed; */
+    }
+    h1 strong {
+        color: #026fff ;
+    }
+}
