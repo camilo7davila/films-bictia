@@ -1,0 +1,27 @@
+
+.contenedor-carrusel{
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+}
+.carousel-item{
+    height: 80vh;
+    width: 100%;
+    background-color: #c5bbae42;
+    & img{
+        height: inherit;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto;
+        display: block;
+    }
+}
+.carousel-caption{
+    & h5{
+        color: black;
+        font-size: 40px;
+        font-weight: 500;
+        -webkit-text-stroke: 1px white;
+    }
+}

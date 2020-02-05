@@ -1,0 +1,72 @@
+.container {
+    max-width: 1024px;
+    flex: 1;
+    margin: 0 auto;
+    height: inherit;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;
+}
+.hero{
+    height: 300px;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-image{
+    object-fit: cover;
+}
+
+h1
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    /* text-transform: uppercase;
+    text-decoration: dashed; */
+}
+h1 strong {
+    color: #026fff ;
+}
+
+.about-me{
+    background-color: #fafafa ;
+    padding: 20px;
+}
+.contenedor-info{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    // border: 1px solid gray;
+    // border-radius: 10px;
+}
+.contenedor-izquierdo{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contenedor-derecho{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom:40px ;
+}

@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background: #212f40;
+}
+
+.contenedor{
+    max-width: 85vw;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contenedor-cartelera{
+    background-color: #3e4854;
+    padding: 20px 0;
+}
+
+.en-cartelera{
+    text-align: center;
+    padding: 10px 0 30px 0;
+    color: blanchedalmond;
+}
+.proximos-estrenos{
+    text-align: center;
+    padding: 20px 0 30px 0;
+    color: blanchedalmond;
+}
+
+.contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.card{
+    margin: 0 auto;
+    width: 100% !important;
+}
